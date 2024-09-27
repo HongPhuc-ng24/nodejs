@@ -1,0 +1,53 @@
+{
+  "osType": "Windows_NT",
+  "platform": "win32",
+  "totalMemory": 8449060864,
+  "freeMemory": 1107746816,
+  "usedMemory": 7341314048,
+  "cpus": [
+    {
+      "model": "Intel(R) Core(TM) i3-6006U CPU @ 2.00GHz",
+      "speed": 1992,
+      "times": {
+        "user": 628031,
+        "nice": 0,
+        "sys": 670000,
+        "idle": 1800250,
+        "irq": 35218
+      }
+    },
+    {
+      "model": "Intel(R) Core(TM) i3-6006U CPU @ 2.00GHz",
+      "speed": 1992,
+      "times": {
+        "user": 651562,
+        "nice": 0,
+        "sys": 547078,
+        "idle": 1899375,
+        "irq": 7468
+      }
+    },
+    {
+      "model": "Intel(R) Core(TM) i3-6006U CPU @ 2.00GHz",
+      "speed": 1992,
+      "times": {
+        "user": 742218,
+        "nice": 0,
+        "sys": 585500,
+        "idle": 1770296,
+        "irq": 5609
+      }
+    },
+    {
+      "model": "Intel(R) Core(TM) i3-6006U CPU @ 2.00GHz",
+      "speed": 1992,
+      "times": {
+        "user": 747531,
+        "nice": 0,
+        "sys": 574828,
+        "idle": 1775656,
+        "irq": 3640
+      }
+    }
+  ]
+}

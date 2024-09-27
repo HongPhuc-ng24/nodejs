@@ -1,0 +1,12 @@
+{
+  "name": "homework",
+  "packageManager": "yarn@4.5.0",
+  "dependencies": {
+    "b1": "file:",
+    "homework": "file:",
+    "nodemon": "^3.1.6"
+  },
+  "scripts": {
+    "start": "nodemon checkSystem.js"
+  }
+}
