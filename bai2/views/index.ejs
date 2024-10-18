@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Creating a server with Node.js</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: #f4f4f4;
+    }
+
+    .container {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      padding: 30px;
+      width: 400px;
+    }
+
+    .title {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+      width: 100%;
+    }
+
+    .dropdown-select {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      box-sizing: border-box;
+      cursor: pointer;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      width: 100%;
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #ddd;
+    }
+
+    .show {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <h1 class="title">Creating a server with Node.js</h1>
+  <p>Hello, I'm a Node.js server for searching vehicle palte number!</p>
+  <div class="dropdown">
+    <input type="text" class="dropdown-select" placeholder="Quảng Ngãi" readonly>
+    <div id="myDropdown" class="dropdown-content">
+      <% vehiclePlates.forEach(function(plate) { %>
+        <a href="#">
+          <b><%= plate.city %></b>
+        </a>
+    <% }); %>
+    
+    </div>
+  </div>
+
+  <script>
+    // Get the dropdown button element
+    const dropdown = document.querySelector('.dropdown-select');
+
+    // Get the dropdown content element
+    const dropdownContent = document.getElementById('myDropdown');
+
+    // When the user clicks the dropdown button, toggle between hiding and showing the dropdown content
+    dropdown.addEventListener('click', function() {
+      dropdownContent.classList.toggle('show');
+    });
+
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropdown-select')) {
+        const dropdowns = document.querySelectorAll('.dropdown-content');
+        dropdowns.forEach(dropdown => {
+          dropdown.classList.remove('show');
+        });
+      }
+    }
+  </script>
+</div>
+</body>
+</html>
