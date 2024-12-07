@@ -1,4 +1,8 @@
 *.log
 node_modules/
 .vscode/
+<<<<<<< HEAD
 .yarn/
+=======
+.yarn/
+>>>>>>> 4088eb3fd7c7a6da070877a2d21a4de4a793acd6
